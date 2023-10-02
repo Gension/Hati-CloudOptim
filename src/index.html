@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudOptim - Le cloud c'est magique !</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/images/logo.png">
+        <h1>CloudOptim</h1>
+    </header>
+    <main>
+        <h2>Servers</h2>
+        <div class="servers">
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 - CloudOptim
+    </footer>
+
+    <template id="server-template">
+        <article>
+            <div class="server-header">
+                <a class="server-name">cloud01</a> <span>Healthy</span>
+                <div></div>
+                <button>⭐</button>
+            
+            </div>
+            <div class="server-info">
+                <div class="progress">
+                    <h4>CPU</h4>
+                    <span>42%</span>
+                    <progress min="0" max="100" value="42"></progress>
+                </div>
+                <div class="progress">
+                    <h4>RAM</h4>
+                    <span>33%</span>
+                    <progress min="0" max="100" value="33"></progress>
+                </div>
+            </div>
+        </article>
+    </template>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
